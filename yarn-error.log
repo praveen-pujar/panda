@@ -1,0 +1,65 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Praveen\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js dev
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Praveen\bin;C:\Python38\Scripts;C:\Python38;D:\oracle\product\10.2.0\db_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files (x86)\Skype\Phone;C:\Program Files (x86)\Smart Projects\IsoBuster;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn;C:\TDM-GCC-32\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Users\Praveen\AppData\Local\Android\Sdk\platform-tools;C:\curl;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH;C:\Users\Praveen\AppData\Local\Android\Sdk\platform-tools;C:\Users\Praveen\AppData\Local\atom\bin;C:\Users\Praveen\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Users\Praveen\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.16.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\Praveen\Desktop\iManage\panda\panda\package.json: Unexpected token } in JSON at position 279
+      at JSON.parse (<anonymous>)
+      at C:\Users\Praveen\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\Praveen\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\Praveen\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "panda",
+    "version": "1.0.0",
+    "description": "video app",
+    "main": "server.js",
+    "scripts": {
+      "client" : "cd client && npm start",
+      "server" : "nodemon server.js",
+         "dev" : "concurrently --kill-others-on-fail \"npm server\" \"npm client\"",
+       
+    },
+    "author": "Praveen Pujar",
+    "license": "ISC",
+    "dependencies": {
+      "connect-flash": "*",
+      "cookie-parser": "*",
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "express-messages": "*",
+      "express-session": "^1.17.1",
+      "express-validator": "*",
+      "http-proxy-middleware": "^1.0.6",
+      "mongodb": "*",
+      "mongoose": "*",
+      "multer": "*",
+      "passport": "*",
+      "passport-http": "*",
+      "passport-local": "*",
+      "randomatic": "^3.1.1"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.4",
+      "concurrently" : "*"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

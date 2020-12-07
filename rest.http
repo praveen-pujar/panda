@@ -1,0 +1,31 @@
+### This is for authorized entry to user page
+GET http://localhost:3080/user
+Content-Type: "application/json"
+{
+{"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDMyODg4MjAsImV4cCI6MTYwMzM3NTIyMCwiYXVkIjoiNWY4OWE0YjY4Nzg2ZGQ2MDI4ODQ4YzQxIiwiaXNzIjoicGFuZGEifQ.UALRpMfymZPFUnaAmDigWho3UTQtZFbdmm4sm-Ae36c"},
+"email" : "praveen@gmail.com"
+}
+
+# ### Creating new user
+POST http://localhost:3080/signup
+Content-Type: "application/json"
+
+{
+"firstname" : "praveen",
+"lastname" : "pujar",
+"email" : "praveen@gmail.com",
+"password" : "Praveen@1",
+"password2" : "Praveen@1"
+}
+
+# ### Error handlers request
+# POST http://localhost:3080/signupskm
+
+### Login route
+POST http://localhost:3080/signin
+Content-Type: application/json
+
+{
+"email" : "praveen@gmail.com",
+"password" : "Praveen@1"
+}
